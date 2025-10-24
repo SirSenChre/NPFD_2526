@@ -26,7 +26,7 @@ const APIinfo = {
 function getWeather() { 
     APIcity = input.value;
     apiURL = `${APIinfo.link}${APIcity}${APIinfo.key}${APIinfo.units}${APIinfo.lang}`;
-    console.log(apiURL);
+    // console.log(apiURL);
 
     axios.get(apiURL).then((response) => {
         // console.log(response.data);

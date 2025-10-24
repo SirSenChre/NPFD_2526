@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja pogodowa</title>
+</head>
+<body>
+    <header>
+        <h1>Aplikacja pogodowa</h1>
+    </header>
+    <main>
+        <section class="weather">
+            <section class="search">
+                <input type="text" placeholder="podaj nazwę miasta" name="" id="">
+                <button>Sprawdź pogodę!</button>
+                <p class="error_msg"></p>
+            </section>
+            <section class="weather_info">
+                <h2 class="city_name"></h2>
+                <div class="weather_img_and_temp">
+                    <div>
+                        <img src="" alt="" class="weather_img">
+                        <p class="temp"></p>
+                    </div>
+                    <p class="weather_description"></p>
+                </div>
+                <div class="">
+                    <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
+                    <p>Ciśnienie <span class="pressure"></span></p>
+                    <p>Wilgotność <span class="humidity"></span></p>
+                    <p>Prędkość wiatru: <span class="wind_speed"></span></p>
+                    <p>Widoczność <span class="visibility"></span></p>
+                    <p>Zachmurzenie: <span class="clouds"></span></p>
+                </div>
+            </section>
+        </section>
+        <section class="pollution">
+            <h3>Zanieczyszczenia powietrza</h3>
+            <div>
+                <img src="./img/pm.png" alt="" class="pollution_img">
+                <p class="value"><span class="pollution_value"></span></p>
+                <p>&micro;g/m<sup>3</sup></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>projekt WSB Merito Gdańsk 2025</p>
+        <p>Autor: Jakub Dampc</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

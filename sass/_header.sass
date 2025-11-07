@@ -1,2 +1,30 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto'
+    
 header
-    background-color: black
+    @include flexContainer(column, center, center)
+    @include box(100%, 20px, $main-color, $dark-color)
+    text-align: center
+    padding: 20px
+
+    section.search
+        margin-top: 20px
+
+        div.form
+            @include flexContainer(row, center, center)
+
+            input
+                padding: 10px 5px
+                border-top-left-radius: 10px
+                border-bottom-left-radius: 10px
+                border: none
+
+                button
+                    padding: 10px 5px
+                    border-top-left-radius: 10px
+                    border-bottom-left-radius: 10px
+                    border: none
+

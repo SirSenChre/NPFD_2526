@@ -34,6 +34,7 @@ function getWeather() {
         cityName.textContent = `${response.data.name}, ${response.data.sys.country}`;
         temp.textContent = `${Math.round(response.data.main.temp)}°C`;
         weatherDesc.textContent = response.data.weather[0].description;
+        weatherDesc.classList.add('description_red');
         feelsLike.textContent = `${Math.round(response.data.main.feels_like)}°C`;
         humidity.textContent = `${response.data.main.humidity}%`;
         windSpeed.textContent = `${Math.round(response.data.wind.speed*3.6)} km/h`;
@@ -84,6 +85,7 @@ function getWeather() {
         ];
 
         pollutionImg.style.backgroundColor = 'transparent';
+        weatherDesc.classList.remove('description_red');
 
         elementsToClear.forEach(el => el.textContent = '');
 

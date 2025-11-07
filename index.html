@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikacja pogodowa</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Aplikacja pogodowa</h1>
+        <section class="search">
+            <div class="form">
+            <input type="text" placeholder="podaj nazwę miasta" name="" id="">
+            <button>Sprawdź pogodę!</button>
+            <p class="error_msg"></p>
+            </div>
+        </section>
     </header>
     <main>
         <section class="weather">
-            <section class="search">
-                <input type="text" placeholder="podaj nazwę miasta" name="" id="">
-                <button>Sprawdź pogodę!</button>
-                <p class="error_msg"></p>
-            </section>
             <section class="weather_info">
                 <h2 class="city_name"></h2>
                 <div class="weather_img_and_temp">
